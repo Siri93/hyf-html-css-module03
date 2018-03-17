@@ -1,0 +1,81 @@
+<!doctype>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Form exercise</title>
+  <meta name="description" content="Layout exercise">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      Logo
+    </div>
+    <p class="navigation">
+      Navigation
+    </p>
+    </headr>
+        <div class="wrap">
+           <h1>Sign up to your costumtailor.com</h1>
+                <h2>Step 4/4 - Payment</h2>
+                    <p><strong>Progress</strong></p>
+          <div class="bar">
+  <div class="barcontainer" style="width:85%">90%</div>
+</div>
+                <p>Please fill in your payment data</p>
+                <form>
+                        <div class="payment">
+                        <div>
+                                <label for="card-name">Name on card</label>
+                                <input type="text" required id="card-name" name="user_card-name">
+                        </div>
+
+                 <label> Card type </label>
+                  <select> 
+                                                <option value="Denmark">Visa Card</option>
+                                                <option value="USA">Master Card</option>
+                                                <option value="UK">Credit card</option>
+                                               
+                 </select>
+                      <div class="row crdit">
+                        <div class="col">
+                       <div>
+                                <label for="card-num">Credit card number</label>
+                                <input type="text" id="card-num" name="numeroProtocollo" required pattern="[0-9]{16}" >
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div>
+                                        <label for="name">First Name</label>
+                                        <input type="text" required id="name" name="user_name" maxlength="3000">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="row expiry">
+                        <div class="col">
+                        <div>
+                                <label for="expiry-month">Expiry month</label>
+                                <input type="tel" required id="expiry-month" name="expiry-month">
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div>
+                                <label for="expiry-year">Expiry year</label>
+                                <input type="tel" required id="expiry-year" name="expiry-year">
+                        </div>
+                        </div>
+                        <div>
+                                <label for="ccv">CCV</label>
+                                <input type="tel" id="ccv" name="numeroProtocollo" required pattern="[0-9]{3}">
+                        </div>
+                </div>
+                        <button>Submit</button>
+            </form>
+      </div>
+</body>
